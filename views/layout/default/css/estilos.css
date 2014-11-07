@@ -1,7 +1,7 @@
 
 body{
 	margin: 0;
-	background: #243D59;
+	background: #c1e0ff;
 	font-family: Arial, sans-serif;
 }
 
@@ -42,20 +42,20 @@ a:hover {
 #main{
 	position: relative;
 	margin: 0 auto 0 auto;
-	width: 900px;
+	width: 1100px;
 	padding-top: 20px;
 }
 
 #header{
-	width: 900px;
+	width: 1200px;
 	height: 100px;
 }
 
 #logo{
-	width: 270px;
+	width: 300px;
 	float: left;
 	margin: 0;
-	padding: 10px 10px 10px 20px;
+	padding: 10px 70px;
 	height: 80px;
 }
 
@@ -67,7 +67,7 @@ a:hover {
 }
 
 #menu{
-	width: 580px;
+	width: 450px;
 	height: 80px;
 	float: left;
 	margin: 0;
@@ -76,15 +76,10 @@ a:hover {
 
 #content{background: #999999;
 	color: #6E6E6E;
-	width: 830px;
+	width: 1000px;
 	padding: 20px 20px 20px 50px;
 	background: white;
 	font-family: "Trebuchet MS", sans-serif;
-	border-radius: 10px;
-	-ms-border-radius: 10px;
-	-moz-border-radius: 10px;
-	-webkit-border-radius: 10px;
-	-khtml-border-radius: 10px;
 	overflow: hidden;
 }
 
@@ -93,15 +88,14 @@ a:hover {
 }
 
 #top_menu{
-	height: 60px;
+	height: 70px;
 	position: relative;
-	width: 530px;
+	width: 450px;
 	margin: 0 auto 0 auto;
 	color: white;
 	overflow: hidden;
 	text-transform: uppercase;
 	background: url(../img/menu_background_1.jpg) repeat-x;
-	border-radius: 5px;
 }
 
 #top_menu ul{
@@ -131,22 +125,6 @@ a:hover {
 }
 
 #top_menu ul li a:hover{
-	text-decoration: underline;
-}
-
-#footer{
-	color: #FFFFFF;
-	width: 880px;
-	padding:10px;
-	text-align: center;
-}
-
-#footer a{
-	color: #FFFFFF;
-	text-decoration: none;
-}
-
-#footer a:hover{
 	text-decoration: underline;
 }
 

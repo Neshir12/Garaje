@@ -8,7 +8,8 @@
             <div id="main">
                 <div id="header">
                     <div id="logo">
-                        <h1><?php echo APP_NAME; ?></h1>
+                        <h1><?php echo APP_NAME;?><img src="<?php echo $_layoutParams['ruta_img'] ?>garage.png" WIDTH=40 HEIGHT=40  HSPACE=8 alt="Pintura geométrica"></h1>
+                        
                     </div>
 
                     <div id="menu">
@@ -25,8 +26,8 @@
                     <?php endif; ?>
                 </ul>
             
-                </div>
-            </div>
+                </div><a href="<?php BASE_URL; ?>index">CERRAR SESION</a>
+                    </div> 
         </div>
         <div id="content">
             <div id="error"><?php if(isset($this->_error)) echo $this->_error;  ?></div>
