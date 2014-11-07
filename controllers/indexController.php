@@ -8,9 +8,12 @@ class indexController extends Controller
 
     public function index()
     {
-        $post = $this->loadModel('post');
-        $this->_view->tpersona = $post->getPosts();
-        $this->_view->renderizar('index');
+        $this->_view->renderizar('index','header1','footer1');
+       
+    }
+        public function register()
+    {
+        $this->_view->renderizar('register','header1','footer1');
        
     }
 }

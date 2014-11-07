@@ -1,4 +1,4 @@
-<h2>Ultimos Post</h2>
+<h2>Registro de Vehiculos</h2>
 <?php if(isset($this->tpersona)&& count($this->tpersona)): ?>
 <table>
     <tr>
@@ -6,6 +6,11 @@
         <td>Nombre</td>
         <td>Apellido</td>
         <td>DNI</td>
+        <td>Placa</td>
+        <td>Marca</td>
+        <td>Modelo</td>
+        <td>Color</td>
+        <td>Mantenimiento</td>
     </tr>
     <?php for($i = 0; $i<count($this->tpersona);$i++): ?>
     <tr>
@@ -13,6 +18,13 @@
         <td><?php echo $this->tpersona[$i]['Nombre'] ?></td>
         <td><?php echo $this->tpersona[$i]['Apellidos'] ?></td>
         <td><?php echo $this->tpersona[$i]['Dni'] ?></td>
+        <td><?php echo $this->tpersona[$i]['Placa'] ?></td>        
+        <td><?php echo $this->tpersona[$i]['Marca'] ?></td>
+        <td><?php echo $this->tpersona[$i]['Modelo'] ?></td>
+        <td><?php echo $this->tpersona[$i]['Color'] ?></td>
+        <td><img src="<?php echo $_layoutParams['ruta_img'] ?>add.png" alt="Agregar" >
+        <img src="<?php echo $_layoutParams['ruta_img'] ?>delete.png" alt="Eliminar" >
+        <img src="<?php echo $_layoutParams['ruta_img'] ?>edit.png" alt="Editar" ></td>
     </tr>
     <?php endfor; ?>
 </table>
