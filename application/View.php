@@ -48,5 +48,15 @@ class View
             throw new Exception ('Error de vista');
         }
     }
+        public function setJs(array $js)
+    {
+        if(is_array($js) && count($js)){
+            for($i=0; $i < count($js); $i++){
+                $this->_js[] = BASE_URL . 'views/' . $this->_controlador . '/js/' . $js[$i] . '.js';
+            }
+        } else {
+            throw new Exception('Error de js');
+        }
+    }
 }
 ?>

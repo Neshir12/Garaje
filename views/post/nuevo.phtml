@@ -1,0 +1,12 @@
+<form id="form1" method="post" action="<?php echo BASE_URL; ?>post/nuevo">
+    <input type="hidden" name="guardar" value="1" />
+    <p>Id:<br />
+    <input type="texto" name="idPersona" value="<?php if(isset($this->datos['idPersona'])) echo $this->datos['idPersona']; ?>" /></p>
+    <p>Dni:<br />
+    <input type="texto" name="Dni" value="<?php if(isset($this->datos['Dni'])) echo $this->datos['Dni']; ?>" /></p>
+    <p>Nombre:<br />
+    <input type="texto" name="Nombre" value="<?php if(isset($this->datos['Nombre'])) echo $this->datos['Nombre']; ?>" /></p>
+    <p>Apellido:<br />
+    <input type="texto" name="Apellidos" value="<?php if(isset($this->datos['Apellidos'])) echo $this->datos['Apellidos']; ?>" /></p>
+   <p><input type="submit" class="button" value="Guardar" /></p>
+</form>

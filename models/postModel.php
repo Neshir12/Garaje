@@ -12,5 +12,16 @@ class postModel extends Model
         return $post->fetchall();
         
     }
+    public function insertarPost($idPersona,$Dni, $Nombre, $Apellidos)
+    {
+        $this->_db->prepare("INSERT INTO tpersona VALUES (:idPersona, :Dni, :Nombre, :Apellidos)")
+                ->execute(
+                        array(
+                           ':idPersona' => $idPersona,
+                           ':Dni' => $Dni,
+                           ':Nombre' => $Nombre,
+                           ':Apellidos' => $Apellidos
+                        ));
+    }
 }
 ?>
