@@ -6,6 +6,7 @@ define ('DEFAULT_LAYOUT' , 'default');
 
 define ('APP_NAME' , 'GARAJE');
 define ('APP_SLOGAN' , 'mi primer framework php y mvc ...');
+define ('APP_COMPANY' , 'www.Garaje.com');
 
 define('DB_HOST', '127.0.0.1');
 define('DB_USER', 'root');

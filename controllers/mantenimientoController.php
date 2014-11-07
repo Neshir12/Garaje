@@ -8,7 +8,9 @@ class mantenimientoController extends Controller
 
     public function index()
     {
-        $this->_view->renderizar('index','header','footer');
+        $post = $this->loadModel('post');
+        $this->_view->tpersona = $post->getPosts();
+        $this->_view->renderizar('index');
        
     }
 }

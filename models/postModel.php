@@ -8,7 +8,7 @@ class postModel extends Model
     
     public function  getPosts()
     {
-        $post = $this->_db->query('select * from tpersona inner join tvehiculo on tpersona.Idpersona=tvehiculo.Idpersona');
+        $post = $this->_db->query('select * from tpersona');
         return $post->fetchall();
         
     }

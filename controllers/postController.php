@@ -3,8 +3,7 @@
 class postController extends Controller 
 {
     private $_post;
-    public function __construct() 
-    {
+    public function __construct() {
         parent::__construct();
         $this->_post = $this->loadModel('post');
     }
@@ -12,7 +11,7 @@ class postController extends Controller
     {
         $this->_view->tpersona = $this->_post->getPosts();
         $this->_view->titulo = 'Post';
-        $this->_view->renderizar('index','header','footer','post');
+        $this->_view->renderizar('index','post');
        
     }
 }
